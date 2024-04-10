@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.min.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <form class="form-join">
+        <input type="text" id="name" maxlength="16" placeholder="Enter your username" size="14" required>
+        <input type="text" id="room" placeholder="Chat Room" size="6" required>
+        <button id="join" type="submit">Join</button>
+    </form>
+    <ul class="chat-display"></ul>
+
+    <p class="user-list"></p>
+
+    <p class="room-list"></p>
+
+    <p class="activity"></p>
+
+
+
+    <form class="form-msg">
+        <input type="text" id="message" placeholder="Your Message" required>
+        <button type="submit">Send</button>
+    </form>
+</body>
+</html>
