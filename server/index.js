@@ -28,7 +28,7 @@ const userState = {
 }
 const io = new Server(expressServer, {
     cors: {
-        origin: process.env.NODE_ENV === "production" ?  false : ["http://localhost:5500", "http://127.0.0.1:5500", "http://10.0.0.77:5500" ],
+        origin: process.env.NODE_ENV === "production" ?  false : ["http://localhost:5500", "http://127.0.0.1:5500",],
         methods: ["GET", "POST"],
         credentials: true
     }

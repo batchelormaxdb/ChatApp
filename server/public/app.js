@@ -1,4 +1,4 @@
-const socket = io('ws://localhost:3500')
+const socket = io('https://chatapp-ywb0.onrender.com/')
 
 const activity = document.querySelector('.activity');
 const userList = document.querySelector('.user-list');
