@@ -1,4 +1,4 @@
-const socket = io('https://chatapp-ywb0.onrender.com/')
+const socket = io('http://localhost:3500')
 
 const activity = document.querySelector('.activity');
 const userList = document.querySelector('.user-list');
@@ -58,7 +58,10 @@ socket.on("message", (data) =>{
     }
     if( name !== 'Admin')
     {
-        li.innerHTML = `<div class=post__header ${name === nameInput.value? 'post__header--user': 'post__header--reply'}">
+        li.innerHTML = `<div class="post__header ${name === nameInput.value
+            ? 'post__header--user' 
+            : 'post__header--reply'
+        }">
         <span class="post__header--name">${name}</span>
         <span class="post__header--time">${time}</span>
         </div>

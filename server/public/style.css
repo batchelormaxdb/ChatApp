@@ -78,7 +78,7 @@ button {
 }
 
 .post__header {
-    color: #000000;
+    color: #ffffff;
     padding: .25rem .5rem;
     display: flex;
     justify-content: space-between;
@@ -87,11 +87,11 @@ button {
 }
 
 .post__header--user {
-    background-color: blue;
+    background-color: rgb(24, 82, 24);
 }
 
 .post__header--reply {
-    background-color: purple;
+    background-color: rgb(20, 132, 160);
 }
 
 .post__header--name {
